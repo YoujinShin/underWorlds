@@ -16,7 +16,7 @@ var camb_map = L.map('camb_map', {
 // // ('examples.map-8ced9urs'); // black & white
 
 var base_layer = L.mapbox.tileLayer('examples.map-2k9d7u0c');
-base_layer.setOpacity(0.26);
+base_layer.setOpacity(0.25);
 base_layer.addTo(camb_map);
 
 
