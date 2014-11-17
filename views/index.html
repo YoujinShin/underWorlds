@@ -2,18 +2,34 @@
 <html lang="en">
 
 <style>
+	@font-face {
+	    font-family: gotham_book;
+	    src: url(gotham-book.ttf);
+	}
+	@font-face {
+	    font-family: gotham_light;
+	    src: url(gotham-light.otf);
+	}
+
 	body {
-		font-family: 'Open Sans', sans-serif !important;
+		font-family: 'gotham_light', sans-serif !important;
 
 	}
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'gotham_book', sans-serif !important;
+	}
 	.nav.navbar-nav {
-		background-color: rgba(255,255,255,0.08) !important;
+		background-color: rgba(255,255,255,0) !important;
 	}
 	.navbar-custom ul.nav li a {
 		color: rgba(255,255,255,0.8) !important;
 	}
 	.intro .slogan h2 {
+		font-family: 'gotham_book', sans-serif !important;
 		letter-spacing: 2px !important;
+		text-shadow: none !important;
+		font-weight: 400;
+		font-size: 53px !important;
 	}
 	h2 {
 		/*color: #000 !important;*/
@@ -35,7 +51,7 @@
 	}
 	.about {
 		font-size: 15px !important;
-		letter-spacing: 1px !important;
+		/*letter-spacing: 1px !important;*/
 	}
 	.department {
 		font-size: 13px !important;
@@ -67,10 +83,6 @@
 	.navbar {
 		top: 0px !important;
 	}
-	.intro .slogan h2 {
-		text-shadow: none !important;
-		font-weight: 300;
-	}
 	.intro .slogan h4 {
 		text-shadow: none !important;
 	}
@@ -81,11 +93,18 @@
 		margin-bottom: 40px;
 	}
 	.boxed-grey {
-		/*height: 230px !important;*/
+		height: 280px !important;
+		padding: 40px !important;
 	}
 	footer {
-		padding: 15px !important;
+		padding: 10px !important;
 		padding-top: 30px !important;
+	}
+	.what {
+		font-family: 'gotham_light', sans-serif !important;
+		color: rgba(255,255,255,0.8);
+		font-size: 17px;
+		letter-spacing: 1px;
 	}
 </style>
 
@@ -95,7 +114,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Underworlds</title>
+    <title>UNDERWORLDS</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -157,8 +176,27 @@
     	<!-- <div id='camb_map'></div> -->
 	
 		<div class="slogan">
-			<h2>UNDERWORDLS</span> </h2>
-			<h4>WHAT IS IN OUR COLLECTIVE GUT?</h4>
+			<h2 style="margin-bottom: 10px !important">UNDERWORLDS</h2>
+
+			<div class="row" style="margin-top: 0px !important">
+				<div class="col-lg-4 col-lg-offset-4">
+					<!-- <hr class="marginbot-50"> -->
+					<hr >
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4">
+					<div class='what'>A SMART SEWAGE INFRASTRUCTURE TO MONITOR URBAN HEALTH PATTERNS</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4">
+					<hr class="marginbot-20">
+				</div>
+			</div>
+
 		</div>
 
 		<div class="page-scroll">
@@ -198,18 +236,15 @@
         <div class="row">
             <div class="col-sm-6 col-md-6" style="text-align:left;">
             <div class="about">
-				Real-time urban epidemiology is within reach, thanks to the possibility to analyze and scan sewage for genetic and chemical information. To exploit this untapped rich source of information, tailored physical, biochemical, and computational infrastructure must be put into place. In addition, key validation experiments are required to establish the validity of the platform. These efforts are described herein.
+				A vast reservoir of information on human health and behavior lies in our sewage, and yet it remains untapped.  We imagine a future in which sewage is mined for real-time information that can inform policy makers, health practitioners, designers, and researchers alike.  Such is the idea behind Underworlds: a cross-disciplinary, open-data platform for monitoring urban health patterns, shaping more inclusive public health strategies, and pushing the boundaries of urban epidemiology.  Pioneered by the Senseable City Lab and the Alm Lab, a prototype smart sewage platform is being developed at MIT consisting of physical infrastructure, biochemical measurement technologies, and the downstream computational tools and analytics necessary to interpret and act on our findings.
 				<br><br>
-				Underworlds is a highly innovative project. As such, no pre-existing model for establishing a smart sewage infrastructure exists. The project’s activities are organized for this reason into two distinct parts: (i) building the smart sewage infrastructure, and (ii) development and deployment of pilot applications. 
+				The Underworlds project is the first of its kind, and a proof of concept that cities can make use of their waste water system to do near real-time urban epidemiology and understand human health and behavior with a fine spatio-temporal resolution.  Probably the most obvious first application of smart sewage technology is contagious disease surveillance, and the prediction of outbreaks of infectious disease before symptoms arise.  Early warnings in relation to the presence of new flu strains in urban centers could significantly reduce a community’s medical costs, save lives and help prevent pandemics. In addition, smart sewage could change the way non-communicable diseases are studied, because biomarkers for diseases such as obesity and diabetes can be measured at unprecedented scale and temporal resolution.
 			</div>
 
             </div>
 			<div class="col-sm-6 col-md-6" style="text-align:left">
 			<div class="about">
-				The first aim of Underworlds is to assemble the infrastructure needed to mine sewage and gather chemical and biological data, and the second aim is to use this infrastructure to implement a set of foundational applications, as identified together with representatives of Kuwaiti public institutions during our April 2014 Stakeholders Workshop. 
-
-				<br><br>
-				These applications will be led by a multi-departmental team of MIT researchers, which includes Senseable City Lab (DUSP), Alm Lab (BE/CEE), Runstandler Lab (BE), Polz Lab (CEE), Prof. Eltahir (CEE), and Distributed Robotics Lab (CSAIL).
+				The implications of this platform extend beyond just disease surveillance to the development of a new type of human population census.  Analyzed in tandem with demographic data, this platform can study the aggregate health of a city to the particular health of a neighborhood.  Underworlds will study the geographic morphology, network topology, and demographic distribution in conjunction with wastewater loads over time, to propose and validate a model that informs wastewater sampling and correlates to target population samples.  This work has already started in a pilot study by Senseable City Lab and Alm Lab in Boston.  In collaboration with the Department of Public Works, the geographic and topological character of the sewage tributary network in several communities in and around Boston have been analyzed along with demographic data to develop a sampling strategy for maximum coverage and optimal population sample.
 			</div>
         </div>		
 		</div>
@@ -303,7 +338,7 @@
 	
 
 	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center">
+    <section id="contact" class="home-section text-center" style="padding-bottom: 40px !important">
 		<div class="heading-contact">
 			<div class="container">
 			<div class="row">
@@ -330,7 +365,7 @@
 			<div class="row centered">
 				
 				
-				<div class="col-lg-4 description boxed-grey" style="height: 245px">
+				<div class="col-lg-4 description boxed-grey">
 					<h3>Senseable City Lab</h3>
 					<p class="department">Department of Urban Studies and Planning</p>
 					<p>
@@ -342,7 +377,7 @@
 					</p>
 				</div>
 
-				<div class="col-lg-4 description">
+				<div class="col-lg-4 description boxed-grey" style="background-color:#fff !important">
 					<h3>Alm Lab</h3>
 					<p class="department">Department of Biological Engineering</p>
 					<p>
@@ -352,7 +387,7 @@
 					</p>
 				</div>
 
-				<div class="col-lg-4 description boxed-grey" style="height: 245px">
+				<div class="col-lg-4 description boxed-grey">
 					<h3>Runstadler Lab</h3>
 					<p class="department">Department of Biological Engineering</p>
 					<p>
@@ -363,10 +398,10 @@
 			</div>
 			
 			<!-- Second row -->
-			<div class="row centered">
+			<div class="row centered" >
 		
-				<br><br>
-				<div class="col-lg-4 description">
+				<!-- <br><br> -->
+				<div class="col-lg-4 description boxed-grey" style="background-color:#fff !important">
 					<h3>Polz Lab</h3>
 					<p class="department">Department of Civil and Environmental Engineering</p>
 					<p>
@@ -374,7 +409,7 @@
 					</p>
 				</div>
 
-				<div class="col-lg-4 description boxed-grey" style="height: 185px">
+				<div class="col-lg-4 description boxed-grey">
 					<h3>Eltahir Research Group</h3>
 					<p class="department">Department of Civil and Environmental Engineering</p>
 					<p>
@@ -382,7 +417,7 @@
 					</p>
 				</div>
 
-				<div class="col-lg-4 description">
+				<div class="col-lg-4 description boxed-grey" style="background-color:#fff !important">
 					<h3>Computer Science and Artificial Intelligence Lab</h3>
 					<p class="department">Department of Electrical Engineering and Computer Science</p>
 					<p>
@@ -392,7 +427,6 @@
 
 			</div>
 		</div>
-
 
 	</section>
 	<!-- /Section: contact -->

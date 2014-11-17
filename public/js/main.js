@@ -4,7 +4,7 @@ L.mapbox.accessToken = 'pk.eyJ1Ijoic2Vuc2VhYmxlIiwiYSI6ImxSNC1wc28ifQ.hst-boAjFC
 // // zoom level : 10 - 18
 var camb_map = L.map('camb_map', {
 	zoomControl: false
-}).setView([42.3783903+0.001,-71.1129096-0.028], 14);
+}).setView([42.3783903+0.001,-71.1129096-0.01], 15);
 
 // // var base_layer = L.mapbox.tileLayer('examples.map-20v6611k').addTo(map); // grey 
 // // ('examples.map-zswgei2n'); // color
@@ -16,7 +16,7 @@ var camb_map = L.map('camb_map', {
 // // ('examples.map-8ced9urs'); // black & white
 
 var base_layer = L.mapbox.tileLayer('examples.map-2k9d7u0c');
-base_layer.setOpacity(0.25);
+base_layer.setOpacity(0.14);
 base_layer.addTo(camb_map);
 
 
@@ -26,7 +26,7 @@ var sewer_network = L.mapbox.tileLayer('meggonagul.c1dlhaor', {
 	accessToken: L.mapbox.accessToken
 });
 
-sewer_network.setOpacity(0.15);
+sewer_network.setOpacity(0.1);
 sewer_network.addTo(camb_map);
 
 
