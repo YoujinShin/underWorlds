@@ -16,7 +16,7 @@ var camb_map = L.map('camb_map', {
 // // ('examples.map-8ced9urs'); // black & white
 
 var base_layer = L.mapbox.tileLayer('examples.map-2k9d7u0c');
-base_layer.setOpacity(0.14);
+base_layer.setOpacity(0.26);
 base_layer.addTo(camb_map);
 
 
@@ -26,7 +26,7 @@ var sewer_network = L.mapbox.tileLayer('meggonagul.c1dlhaor', {
 	accessToken: L.mapbox.accessToken
 });
 
-sewer_network.setOpacity(0.1);
+sewer_network.setOpacity(0.08);
 sewer_network.addTo(camb_map);
 
 
@@ -286,10 +286,10 @@ var myIcon = L.icon({
 });
 
 var polyline_options = {
-    color: 'rgba(255,255,255,0.5)',
+    color: 'rgba(255,255,255,0.7)',
     // color: '#1b4c5a',
     // opacity: 1,
-    weight: 1.5
+    weight: 1.2
 };
 
 
