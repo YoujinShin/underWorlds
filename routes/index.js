@@ -13,8 +13,14 @@ var moment = require("moment"); // date manipulation library
 
 exports.index = function(req, res) {
 	console.log("main page requested");
+	// res.render('theme.html');
 	res.render('index.html');
 	// res.render('main.html');
+}
+
+exports.theme = function(req, res) {
+	console.log("theme page requested");
+	res.render('theme.html');
 }
 
 // /*
