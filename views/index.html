@@ -46,6 +46,25 @@
 		color: #999 !important;
 		/*font-weight: 100 !important;*/
 	}
+    .title {
+    	position: absolute;
+    	top: -200px !important;
+    	font-size: 40px !important;
+    	/*z-index: 1000 !important;*/
+    }
+/*    .title:a {
+    	color: rgba(a);
+    }*/
+    .subtitle {
+    	position: absolute;
+    	font-size: 18px !important;
+    	/*padding:20px;*/
+    	text-align: right !important;
+    	bottom: 10px !important;
+    	right: 30px !important;
+    	/*z-index: 1000 !important;*/
+    	/*padding: 10px !important;*/
+    }
 	p {
 		font-size: 13px !important;
 	}
@@ -67,10 +86,11 @@
 		/*background-color: rgba(0,0,0,0) !important;*/
 	}
 	.top-nav-collapse {
-		background-color: black !important;
+		/*background-color: black !important;*/
+		background-color: #4c597b !important;
 	}
 	footer {
-		background-color: black !important;
+		background-color: #4c597b !important;
 	}
 	#camb_map  { 
 		position: absolute; 
@@ -114,6 +134,44 @@
    		margin-right: auto;
     	width: 460px;
     	/*background-color: #b0e0e6;*/
+	}
+	hr {
+		border-width: 2px !important;
+	}
+	.carousel-indicators {
+		top: -30px !important;
+		left: auto !important;
+		right: 0 !important;
+		width: 80% !important; 
+		margin:0 !important;
+		text-align: right !important;
+	}
+	.carousel-indicators li {
+		border: 0px !important;
+		background-color: rgba(200,200,200,1) !important;
+		border-radius: 0px !important;
+		width: 10% !important;
+		height: 6px !important;
+	}
+	.carousel-indicators .active {
+		/*background-color: #D50000 !important;*/
+		background-color: #4c597b !important;
+		margin: 1px !important;
+
+	}
+	.carousel-inner {
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		height: 360px !important;
+	}
+	.carousel-caption {
+		color: black !important;
+		font-family: 'gotham_book', sans-serif !important;
+		text-shadow: none !important;
+		z-index: 100 !important;
+	}
+	.title:hover {
+		color: #4c597b !important;
 	}
 </style>
 
@@ -173,7 +231,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#intro">Home</a></li>
         <li><a href="#about">About</a></li>
-		<li><a href="#service">Process</a></li>
+		<li><a href="#service">News</a></li>
 		<li><a href="#contact">Team</a></li>
       </ul>
             </div>
@@ -193,24 +251,20 @@
 			<h2 style="margin-bottom: 10px !important">UNDERWORLDS</h2>
 
 			<div class="row" style="margin-top: 0px !important">
-				<!-- <div class="col-lg-4 col-lg-offset-4"> -->
 				<div class="box_center">
-					<!-- <hr class="marginbot-50"> -->
 					<hr style="margin-bottom:6px">
 				</div>
 			</div>
 
 			<div class="row">
-				<!-- <div class="col-lg-4 col-lg-offset-4"> -->
 				<div class="box_center">
 					<div class='what'>A SMART SEWAGE INFRASTRUCTURE TO MONITOR URBAN HEALTH PATTERNS</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<!-- <div class="col-lg-4 col-lg-offset-4"> -->
 				<div class="box_center">
-					<hr class="marginbot-20" style="margin-top:6px">
+					<hr style="margin-top:6px">
 				</div>
 			</div>
 
@@ -232,24 +286,28 @@
 			<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<!-- <div class="wow bounceInDown" data-wow-delay="0.4s"> -->
 					<div class="section-heading">
-					<h2>About</h2>
-					<!-- <i class="fa fa-2x fa-angle-down"></i> -->
-
+						<h2>About</h2>
 					</div>
-					<!-- </div> -->
 				</div>
 			</div>
 			</div>
 		</div>
-		<div class="container">
 
+
+		<div class="container">
 		<div class="row">
 			<div class="col-lg-2 col-lg-offset-5">
+			<!-- <div class="col-lg-12"> -->
 				<hr class="marginbot-50">
 			</div>
 		</div>
+
+		<div class="row" style="top:100px; padding-top:10px; ">
+				<img src="diagram3.png" alt="" style="width:92%"/>	
+        </div>
+
+		<br><br>
         <div class="row">
             <div class="col-sm-6 col-md-6" style="text-align:left;">
             <div class="about">
@@ -272,24 +330,73 @@
 
 	<!-- Section: services -->
     <section id="service" class="home-section text-center bg-gray">
-		
 		<div class="heading-about">
 			<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<!-- <div class="wow bounceInDown" data-wow-delay="0.4s"> -->
 					<div class="section-heading">
-					<h2 style="margin-bottom:0px">Process</h2>
-					<!-- <i class="fa fa-2x fa-angle-down"></i> -->
-
+					<h2 style="margin-bottom:0px">News</h2>
 					</div>
-					<!-- </div> -->
 				</div>
 			</div>
 			</div>
 		</div>
 		<div class="container">
-			<img src="diagram3.png" alt="" style="width:92%"/>	
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-5">
+				<!-- <div class="col-lg-12"> -->
+					<!-- <hr class="marginbot-50"> -->
+					<br><br>
+				</div>
+			</div>
+
+			<!--  -->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			    	<a href="http://www.cnn.com/2014/10/30/health/smart-sewage-to-detect-disease-outbreaks/">
+				      <img src="bg.png" alt="Chania" style="height: 360px">
+				      <div class="carousel-caption">
+				      	
+				        <div class="title">What lies beneath ... 'Smart Sewage' could spot epidemics before they happen</div><br>
+				        <div class="subtitle">CNN</div>
+					    
+			          </div>
+			          </a>
+			    </div>
+
+			    <div class="item">
+			    	<a href="http://www.bostonglobe.com/ideas/2015/01/09/what-does-cambridge-sewage-say-about-residents-mit-plans-find-out/qxBK9jbHYJFMcNGiTM2L2I/story.html?event=event25" class="forcaption">
+			      		<img src="bg.png" alt="Chania" style="height: 360px">
+			      		<div class="carousel-caption">
+			      	
+				        <div class="title">What does Cambridge sewage say about residents? MIT plans to find out</div><br>
+				        <div class="subtitle">Boston Globe</div>
+				    
+			      		</div>
+			      	</a>
+			    </div>
+
+
+			  <!-- Left and right controls -->
+<!-- 			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div> -->
+
+			<!-- <img src="diagram3.png" alt="" style="width:92%"/>	 -->
 		</div>
 	</section>
 	<!-- /Section: services -->

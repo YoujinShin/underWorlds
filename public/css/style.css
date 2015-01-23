@@ -282,6 +282,9 @@ hr {
 
 .bg-gray {
 	background: #f8f8f8;
+  /*border-top: 2px solid #000;*/
+  /*background: #2F374C;*/
+  /*background-color: rgba(0,0,0,0.1);*/
 }
 
 
@@ -357,6 +360,7 @@ hr {
 
 .boxed-grey {
 	background: #f9f9f9;
+  /*background: #2F374C;*/
 	padding: 20px;
 }
 

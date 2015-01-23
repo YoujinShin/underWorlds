@@ -1,4 +1,3 @@
-// L.mapbox.accessToken = 'pk.eyJ1IjoibWVnZ29uYWd1bCIsImEiOiI1cFpUOE5RIn0.jooCCIM584kmRt2nkSOcHw';
 L.mapbox.accessToken = 'pk.eyJ1Ijoic2Vuc2VhYmxlIiwiYSI6ImxSNC1wc28ifQ.hst-boAjFCngpjzrbXrShw';
 
 // // zoom level : 10 - 18
@@ -16,7 +15,7 @@ var camb_map = L.map('camb_map', {
 // // ('examples.map-8ced9urs'); // black & white
 
 var base_layer = L.mapbox.tileLayer('examples.map-2k9d7u0c');
-base_layer.setOpacity(0.26);
+base_layer.setOpacity(0.4);
 base_layer.addTo(camb_map);
 
 
