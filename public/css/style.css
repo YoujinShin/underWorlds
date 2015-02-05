@@ -298,6 +298,13 @@ hr {
 	color: #fff;
 }
 
+.bg-img {
+  width:100%;
+  position:relative;
+  
+  /*background: url(../underground.jpg) no-repeat top center;*/
+}
+
 
 
 /* ===========================
