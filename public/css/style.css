@@ -271,14 +271,16 @@ hr {
 .home-section {
     padding-top: 110px;
     padding-bottom: 110px;
-	display:block;
+	  display:block;
     position:relative;
     z-index:120;
 }
 
 
 .section-heading h2 {
-	font-size: 40px;
+	font-size: 30px;
+  /*text-align: right;*/
+  /*font-size: 40px;*/
 }
 .section-heading i {
 	margin-bottom: 20px;
@@ -378,9 +380,10 @@ hr {
 
 .boxed-grey {
 	/*background: #f9f9f9;*/
-  background: rgba(245,245,245,1);
+  /*background: rgba(245,245,245,1);*/
+  background: #f8f8f8;
   /*background: #2F374C;*/
-	padding: 20px;
+	/*padding: 20px;*/
 }
 
 .team h5 {
