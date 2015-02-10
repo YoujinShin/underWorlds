@@ -278,7 +278,8 @@ hr {
 
 
 .section-heading h2 {
-	font-size: 38px;
+	/*font-size: 38px;*/
+  font-size: 28px;
   text-align: left;
   padding-left: 0px;
   /*color: #333;*/
