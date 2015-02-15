@@ -1,0 +1,56 @@
+/*viz*/
+#viz {
+	text-align: center;
+	padding-top: 65px;
+	padding-bottom: 10px;
+}
+
+.dot {
+	opacity: 0.7;
+}
+
+.bg { 
+	stroke: white;
+	stroke-width: 1;
+}
+
+.scaleText {
+	font-family: sans-serif;
+	font-size: 10px;
+	fill: rgba(255,255,255,0.3);
+	stroke: none;
+	text-align: left;
+}
+
+.middleText {
+	font-family: sans-serif;
+	font-size: 16px;
+	fill: rgba(255,255,255,0.6);
+	stroke: none;
+	text-align: left;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+
+#tooltip {   
+	background: rgba(21,32,45,0.7);
+	border-color: rgba(21,32,45,0.7);
+
+	background-clip: padding-box;
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 4px;
+
+	color: rgba(255,255,255,0.8);
+	font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	padding: 1px 6px;
+	position: absolute;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	z-index: 400;
+	white-space: nowrap;
+	text-transform:capitalize;
+	visibility: hidden;
+}

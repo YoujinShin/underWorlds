@@ -32,19 +32,15 @@
 		font-size: 53px !important;
 	}
 	h2 {
-		/*color: #000 !important;*/
-		/*font-size: 20px !important;*/
 		font-weight: lighter !important;
 		letter-spacing: 2px;
 	}
 	h3 {
-		/*color: #000 !important;*/
 		font-size: 17px !important;
 		font-weight: lighter !important;
 	}
 	h4 {
 		color: #999 !important;
-		/*font-weight: 100 !important;*/
 	}
     .title {
     	position: absolute;
@@ -65,7 +61,6 @@
 	}
 	.about {
 		font-size: 15px !important;
-		/*letter-spacing: 1px !important;*/
 	}
 	.department {
 		font-size: 13px !important;
@@ -80,11 +75,7 @@
 		/*background-color: rgba(0,0,0,0) !important;*/
 	}
 	.top-nav-collapse {
-		background-color: black !important;
-		/*background-color: #4c597b !important;*/
-	}
-	footer {
-		background-color: black !important;
+		background-color: #15202D !important;
 		/*background-color: #4c597b !important;*/
 	}
 	#camb_map  { 
@@ -113,7 +104,8 @@
 	}
 	footer {
 		padding: 10px !important;
-		padding-top: 30px !important;
+		/*margin-top: 30px !important;*/
+		background-color: #15202D !important;
 	}
 	.what {
 		font-family: 'gotham_light', sans-serif !important;
@@ -182,7 +174,6 @@
 
     <title>UNDERWORLDS</title>
 	
-	<!-- <link rel="shortcut icon" href="logo.ico" /> -->
 	<link rel="shortcut icon" href="logo.png" />
 
     <!-- Bootstrap Core CSS -->
@@ -196,6 +187,7 @@
     
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/viz.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
 
 	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js'></script>
@@ -203,9 +195,6 @@
 
 </head>
 
-
-
-<div id='camb_map'></div>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<!-- Preloader -->
@@ -220,32 +209,33 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="/">
-                    <!-- <h1>Underworlds</h1> -->
-                    <img src="logo.png" alt="" style="width:90px"/>
+                    <h1>Underworlds</h1>
+                    <!-- <img src="logo.png" alt="" style="width:90px"/> -->
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#intro">Home</a></li>
-        <li><a href="#about">About</a></li>
-		<li><a href="#service">News</a></li>
-		<li><a href="#contact">Team</a></li>
-      </ul>
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#intro">Home</a></li>
+		        <li><a href="#about">About</a></li>
+				<li><a href="#service">News</a></li>
+				<li><a href="#contact">Team</a></li>
+		      </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
+	<section id="intro">
+    	<div id='viz'></div>
+	</section>
+
 	<!-- Section: intro -->
 	<!-- <div id='camb_map'></div> -->
 
-    <section id="intro" class="intro">
-
-    	<!-- <div id='camb_map'></div> -->
-	
+<!--     <section id="intro" class="intro">	
 		<div class="slogan">
 			<h2 style="margin-bottom: 10px !important">UNDERWORLDS</h2>
 
@@ -275,7 +265,7 @@
 			</a>
 		</div>
 
-    </section>
+    </section> -->
 
 	<!-- /Section: intro -->
 
@@ -284,16 +274,9 @@
 		<div class="heading-about">
 			<div class="container">
 			<div class="row">
-				<!-- <div class="col-lg-8 col-lg-offset-2"> -->
 					<div class="section-heading">
 						<h2>About</h2>
 					</div>
-				<!-- </div> -->
-				<!-- <div class="col-lg-8 col-lg-offset-2">
-					<div class="section-heading">
-						<h2>About</h2>
-					</div>
-				</div> -->
 			</div>
 			</div>
 		</div>
@@ -301,15 +284,7 @@
 
 		<div class="container">
 		<div class="row" style="border-top: 1px solid black;">
-			<!-- <hr style="border-width:1px !important; border-color: rgba(0,0,0,0.6) !important;"> -->
-			<!-- <div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div> -->
 		</div>
-
-		<!-- <div class="row" style="top:100px; padding-top:10px; ">
-				<img src="diagram3.png" alt="" style="width:92%"/>	
-        </div> -->
 
 		
         <div class="row">
@@ -343,16 +318,13 @@
 	
 
 	<!-- Section: services -->
-    <section id="service" class="home-section text-center ">
-    	<!-- <img src="underground.jpg" style="height: 360px"> -->
+    <section id="service" class="home-section text-center" style="background-color:white">
 		<div class="heading-about">
 			<div class="container">
 			<div class="row">
-				<!-- <div class="col-lg-8 col-lg-offset-2"> -->
-					<div class="section-heading">
+				<div class="section-heading">
 					<h2 style="margin-bottom:0px">News</h2>
-					</div>
-				<!-- </div> -->
+				</div>
 			</div>
 			</div>
 		</div>
@@ -419,10 +391,8 @@
 	<!-- /Section: services -->
 	
 
-	
-
 	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center" style="padding-bottom: 40px !important">
+    <section id="contact" class="home-section text-center" style="padding-bottom: 40px !important; background-color:white">
 		<div class="heading-contact">
 			<div class="container">
 			<div class="row">
@@ -490,8 +460,6 @@
 			
 			<!-- Second row -->
 			<div class="row centered" >
-		
-				<!-- <br><br> -->
 				<div class="col-lg-4 description boxed-grey" style="background-color:#fff !important">
 					<h3>Polz Lab</h3>
 					<p class="department">Department of Civil and Environmental Engineering</p>
@@ -517,17 +485,12 @@
 				</div>
 
 			</div>
-			
-			<!-- Third row -->
-<!-- 			<div class="row" >
-				<br>
-				<p style="font-family: gotham_light; font-size: 13px !important; text-align: right; color: black;"> For more information, <span style=""> contact</span>: <a href="mailto:underworlds-info@mit.edu" target="_top" style="color:#4c597b">underworlds-info@mit.edu</a> </p>
-			</div> -->
 		</div>
 
+	<br>
 	</section>
 	<!-- /Section: contact -->
-	<br><br><br>
+	<br>
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -550,7 +513,13 @@
 	<script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
-    <script src="js/main.js"></script>
+
+
+    <script src="/js/queue.v1.min.js"></script>
+	<script src="/js/d3.v3.min.js"></script>
+
+	<script src="/js/viz.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 
 </body>
 
