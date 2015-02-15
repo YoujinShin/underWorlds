@@ -301,6 +301,7 @@ hr {
 
 .bg-gray {
 	background: #f8f8f8;
+  margin: 0px;
   /*border-top: 2px solid #000;*/
   /*background: #2F374C;*/
   /*background-color: rgba(0,0,0,0.1);*/

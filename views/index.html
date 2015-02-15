@@ -15,14 +15,23 @@
 		font-family: 'gotham_light', sans-serif !important;
 		color: #666;
 	}
-	h1, h2, h3, h4, h5, h6 {
-		font-family: 'gotham_book', sans-serif !important;
+	h2, h3, h4, h5, h6 {
+		font-family: 'gotham_light', sans-serif !important;
+	}
+	h1 {
+		padding-top: 3px;
+		margin: 0px !important;
+		font-family: 'gotham_light', sans-serif !important;
+		font-size: 17px !important;
+		letter-spacing: 5px !important;
 	}
 	.nav.navbar-nav {
 		background-color: rgba(255,255,255,0) !important;
 	}
 	.navbar-custom ul.nav li a {
-		color: rgba(255,255,255,1) !important;
+		color: rgba(255,255,255,0.9) !important;
+		font-size: 11px !important;
+		letter-spacing: 2px !important;
 	}
 	.intro .slogan h2 {
 		font-family: 'gotham_book', sans-serif !important;
@@ -34,25 +43,27 @@
 	h2 {
 		font-weight: lighter !important;
 		letter-spacing: 2px;
+		margin-bottom: 14px !important;
+		color: #15202D !important;
 	}
 	h3 {
-		font-size: 17px !important;
-		font-weight: lighter !important;
+		font-size: 14px !important;
+		/*font-weight: lighter !important;*/
 	}
 	h4 {
 		color: #999 !important;
 	}
     .title {
     	position: absolute;
-    	top: -200px !important;
-    	font-size: 30px !important;
+    	top: -205px !important;
+    	font-size: 23px !important;
     }
 
     .subtitle {
     	position: absolute;
     	font-size: 16px !important;
     	text-align: right !important;
-    	bottom: 120px !important;
+    	bottom: 160px !important;
     	right: 30px !important;
 
     }
@@ -60,10 +71,10 @@
 		font-size: 13px !important;
 	}
 	.about {
-		font-size: 15px !important;
+		font-size: 13px !important;
 	}
 	.department {
-		font-size: 13px !important;
+		font-size: 12px !important;
 		opacity: 0.5 !important;
 		position: relative;
 		top: -15px !important;
@@ -72,7 +83,6 @@
 	}
 	.intro {
 		background-image: none !important;
-		/*background-color: rgba(0,0,0,0) !important;*/
 	}
 	.top-nav-collapse {
 		background-color: #15202D !important;
@@ -83,7 +93,6 @@
 		top: 0px; 
 		width: 100%; 
 		background-color: #000;
-		/*z-index: -10;*/
 		height: 100%;
 	}
 	.navbar {
@@ -103,7 +112,9 @@
 		padding: 40px !important;
 	}
 	footer {
-		padding: 10px !important;
+		
+		padding: 0px !important;
+		padding-top: 4px !important;
 		/*margin-top: 30px !important;*/
 		background-color: #15202D !important;
 	}
@@ -114,6 +125,7 @@
 		letter-spacing: 1px;
 	}
 	.home-section {
+		padding-top: 80px !important; 
 		padding-bottom: 30px !important; 
 	}
 	.box_center {
@@ -123,8 +135,8 @@
     	/*background-color: #b0e0e6;*/
 	}
 	hr {
-		border-width: 2px;
-		/*border-color: rgba(0,0,0,0.6) !important;*/
+		border-width: 1px !important;
+		/*border-color: #15202D !important;*/
 	}
 	.carousel-indicators {
 		top: -30px !important;
@@ -148,9 +160,9 @@
 
 	}
 	.carousel-inner {
-		border-top: 1px solid black;
+		border-top: 1px solid rgba(21,32,45,0.4); 
 		/*border-bottom: 1px solid black;*/
-		height: 260px !important;
+		height: 230px !important;
 	}
 	.carousel-caption {
 		color: #555 !important;
@@ -162,6 +174,8 @@
 		color: #4c597b !important;
 	}
 	.container {
+		padding-left: 5% !important;
+		padding-right: 5% !important;
 		/*border-top: 1px solid black;*/
 	}
 </style>
@@ -273,18 +287,16 @@
     <section id="about" class="home-section text-center" style="background-color:white">
 		<div class="heading-about">
 			<div class="container">
-			<div class="row">
 					<div class="section-heading">
 						<h2>About</h2>
 					</div>
-			</div>
 			</div>
 		</div>
 
 
 		<div class="container">
-		<div class="row" style="border-top: 1px solid black;">
-		</div>
+			<div class="row" style="border-top: 1px solid #15202D; opacity:0.4; margin:0px;">
+			</div>
 
 		
         <div class="row">
@@ -308,8 +320,7 @@
 		
 		<br><br>
         <div class="row bg-gray" >
-
-				<img src="diagram3.png" alt="" style="width:80%; margin: 20px"/>	
+				<img src="diagram3.png" alt="" style="width:80%; margin: 10px"/>	
         </div>
 
 		</div> <!-- contailner -->
@@ -318,14 +329,12 @@
 	
 
 	<!-- Section: services -->
-    <section id="service" class="home-section text-center" style="background-color:white">
+    <section id="service" class="home-section text-center" style="background-color:white; padding-top: 60px !important">
 		<div class="heading-about">
 			<div class="container">
-			<div class="row">
 				<div class="section-heading">
-					<h2 style="margin-bottom:0px">News</h2>
+					<h2 style="position: relative; margin-bottom:0px; bottom:-40px">News</h2>
 				</div>
-			</div>
 			</div>
 		</div>
 
@@ -333,8 +342,6 @@
 
 			<div class="row">
 				<div class="col-lg-2 col-lg-offset-5">
-				<!-- <div class="col-lg-12"> -->
-					<!-- <hr class="marginbot-50"> -->
 					<br><br>
 				</div>
 			</div>
@@ -395,35 +402,21 @@
     <section id="contact" class="home-section text-center" style="padding-bottom: 40px !important; background-color:white">
 		<div class="heading-contact">
 			<div class="container">
-			<div class="row">
-				<!-- <div class="col-lg-8 col-lg-offset-2"> -->
-					<!-- <div class="wow bounceInDown" data-wow-delay="0.4s"> -->
-					<div class="section-heading">
+			<!-- <div class="row"> -->
+				<div class="section-heading">
 					<h2>Team</h2>
-					<!-- <i class="fa fa-2x fa-angle-down"></i> -->
-
-					</div>
-					<!-- </div> -->
-				<!-- </div> -->
-			</div>
+				</div>
+			<!-- </div> -->
 			</div>
 		</div>
 
 		<div class="container">
-			
-			<div class="row" style="border-top: 1px solid black;">
-				<!-- <hr style="border-width:1px !important; border-color: rgba(0,0,0,0.6) !important;"> -->
-				<!-- <div class="col-lg-2 col-lg-offset-5">
-					<hr class="marginbot-50">
-				</div> -->
-			</div>
-			<!-- <div class="row">
-				<div class="col-lg-2 col-lg-offset-5">
-					<hr class="marginbot-50">
-				</div>
-			</div> -->
+			<div class="row" style="border-top: 1px solid #15202D; opacity:0.4; margin:0px;">
 
-			<div class="row centered">
+			<!-- <div class="row" style="border-top: 1px solid black;"> -->
+			</div>
+
+			<div class="row" style="margin:0px">
 				<br><br>
 				
 				<div class="col-lg-4 description boxed-grey">
@@ -459,7 +452,7 @@
 			</div>
 			
 			<!-- Second row -->
-			<div class="row centered" >
+			<div class="row" style="margin:0px">
 				<div class="col-lg-4 description boxed-grey" style="background-color:#fff !important">
 					<h3>Polz Lab</h3>
 					<p class="department">Department of Civil and Environmental Engineering</p>
@@ -489,6 +482,8 @@
 
 	<br>
 	</section>
+
+
 	<!-- /Section: contact -->
 	<br>
 	<footer>
