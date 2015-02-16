@@ -1,8 +1,14 @@
 var margin = { top: 20, right: 30, bottom: 40, left: 30 };
 
-var width = 900,
-	width = width - margin.left - margin.right,
-	height = 620,
+var width = parseInt(d3.select('#viz').style('width'), 10)-32;
+var	height = 620;
+
+	if(width > 900) { width = 900; } 
+	else if(width < 620) { height = width;  }
+	
+	width = width - margin.left - margin.right;
+
+
 	height = height - margin.top - margin.bottom;
 
 var svg = d3.select('#viz').append('svg')
