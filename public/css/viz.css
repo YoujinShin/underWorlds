@@ -1,7 +1,7 @@
 /*viz*/
 #viz {
 	text-align: center;
-	padding-top: 65px;
+	padding-top: 85px;
 	padding-bottom: 10px;
 }
 
@@ -22,10 +22,30 @@
 	text-align: left;
 }
 
-.middleText {
-	font-family: sans-serif;
-	font-size: 16px;
+.middleText0 {
+	font-family: 'gotham_light' sans-serif;
+	font-size: 15px;
 	fill: rgba(255,255,255,0.6);
+	stroke: none;
+	text-align: left;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+
+.middleText1 {
+	font-family: 'gotham_light' sans-serif;
+	font-size: 14px;
+	fill: rgba(255,255,255,0.6);
+	stroke: none;
+	text-align: left;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+
+.middleText2 {
+	font-family: 'gotham_light' sans-serif;
+	font-size: 12px;
+	fill: rgba(180,180,180,0.6);
 	stroke: none;
 	text-align: left;
 	letter-spacing: 2px;

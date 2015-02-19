@@ -159,11 +159,28 @@ function radiusGuide() {
 
 function textGuide() {
 
-	g.append('text')
-		.attr('class', 'middleText')
+	g.append('text') //'text'
+		.attr('class', 'middleText0')
 		.attr('x', 0)
 		.attr('y', 0 )
-		.text('1130 genus')
+		.text('Boston Sewage')
 		.attr('stroke-width', 1)
 		.style("text-anchor", "middle");
+
+	g.append('text') //'text'
+		.attr('class', 'middleText1')
+		.attr('x', 0)
+		.attr('y', 25 )
+		.text('Bacterial Profile')
+		.attr('stroke-width', 1)
+		.style("text-anchor", "middle");
+
+	g.append('text') //'text'
+		.attr('class', 'middleText2')
+		.attr('x', 0)
+		.attr('y', 50 )
+		.text('- 1130 genus data ')
+		.attr('stroke-width', 1)
+		.style("text-anchor", "middle");
+
 }
