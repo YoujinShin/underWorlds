@@ -162,7 +162,7 @@ function textGuide() {
 	g.append('text') //'text'
 		.attr('class', 'middleText0')
 		.attr('x', 0)
-		.attr('y', 0 )
+		.attr('y', -10 )
 		.text('Boston Sewage')
 		.attr('stroke-width', 1)
 		.style("text-anchor", "middle");
@@ -170,7 +170,7 @@ function textGuide() {
 	g.append('text') //'text'
 		.attr('class', 'middleText1')
 		.attr('x', 0)
-		.attr('y', 25 )
+		.attr('y', 15 )
 		.text('Bacterial Profile')
 		.attr('stroke-width', 1)
 		.style("text-anchor", "middle");
