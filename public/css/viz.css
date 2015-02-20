@@ -25,7 +25,7 @@
 .middleText0 {
 	font-family: 'gotham_light' sans-serif;
 	font-size: 15px;
-	fill: rgba(255,255,255,0.6);
+	fill: rgba(255,255,255,0.7);
 	stroke: none;
 	text-align: left;
 	letter-spacing: 2px;
@@ -35,7 +35,7 @@
 .middleText1 {
 	font-family: 'gotham_light' sans-serif;
 	font-size: 14px;
-	fill: rgba(255,255,255,0.6);
+	fill: rgba(255,255,255,0.7);
 	stroke: none;
 	text-align: left;
 	letter-spacing: 2px;
