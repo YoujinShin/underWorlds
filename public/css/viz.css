@@ -51,17 +51,33 @@
 	letter-spacing: 2px;
 	font-weight: lighter;
 }
+.scaleText {
+	font-family: sans-serif;
+	font-size: 10px;
+	fill: rgba(255,255,255,0.3);
+	stroke: none;
+	text-align: left;
+}
+
+.middleText {
+	font-family: sans-serif;
+	font-size: 12px;
+	fill: rgba(255,255,255,0.8);
+	stroke: none;
+	text-align: left;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
 
 #tooltip {   
 	background: rgba(21,32,45,0.7);
 	border-color: rgba(21,32,45,0.7);
 
-	letter-spacing: 1px;
-
 	background-clip: padding-box;
 	border-radius: 4px;
 	border-style: solid;
 	border-width: 4px;
+	letter-spacing: 1px;
 
 	color: rgba(255,255,255,0.8);
 	font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -75,4 +91,21 @@
 	white-space: nowrap;
 	text-transform:capitalize;
 	visibility: hidden;
+}
+
+.phylum_arc {
+	fill: white;
+}
+
+#taxo {
+	position: absolute;
+	font-family: sans-serif;
+	font-size: 12px;
+	color: rgba(255,255,255,0.8);
+	/*stroke: none;*/
+	text-align: left;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	left: 100px;
+	top : 100px;
 }
