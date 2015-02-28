@@ -122,3 +122,25 @@
 	left: 100px;
 	top : 100px;
 }
+
+.taxoName {
+	font-family: sans-serif;
+	font-size: 12px;
+	fill: rgba(255,255,255,0.4);
+	stroke: none;
+	/*text-align: center;*/
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+
+.selected {
+	font-family: sans-serif;
+	font-size: 12px;
+	/*fill: rgba(255,255,255,0.8);*/
+	fill: rgba(255,255,255,0.9);
+	stroke: none;
+	/*text-align: center;*/
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+

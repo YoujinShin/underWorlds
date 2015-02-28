@@ -1,6 +1,6 @@
 var margin = { top: 20, right: 30, bottom: 30, left: 30 };
 
-var width = 1000,
+var width = 1200,
 	width = width - margin.left - margin.right,
 	height = 610,
 	height = height - margin.top - margin.bottom;
@@ -20,8 +20,8 @@ svg.append('rect')
 				.attr('height', height + margin.top + margin.bottom)
 				.style('fill', '#15202D');
 
-var tx = width/2 + margin.left;
-var ty = height/2 + margin.top;
+var tx = width/2 + margin.left -50;
+var ty = height/2 + margin.top -20;
 
 var g = svg.append('g')
 			.attr('transform', 'translate('+ tx +','+ ty +')');
@@ -68,6 +68,7 @@ var path;
 function draw(error, genus, root) {
 	radiusGuide();
 	textGuide();
+	texonomyList();
 
 	// console.log(genus);
 
@@ -101,6 +102,8 @@ function draw(error, genus, root) {
 					.on("mouseout", function(d) {
 						unselectDots();
 						unselectArc(path);
+						changeSelectedBox(0);
+						changeTaxoName("","", "", "", "", "");
 
 						d3.select(this).attr("stroke-width", 1);
 						tooltip.style("visibility", "hidden");
@@ -140,6 +143,8 @@ function draw(error, genus, root) {
 						d3.select(this).transition().duration(230).attr('r', 1.7);
 						unselectArc(path);
 						unselectLine();
+						changeSelectedBox(0);
+						changeTaxoName("","", "", "", "", "");
 
 						d3.select(this).style('opacity', 0.7);
 						// d3.select(this).attr("stroke-width", 0);
@@ -177,6 +182,9 @@ function draw(error, genus, root) {
 			unselectArc(path);
 			unselectDots();
 			unselectLine();
+			changeSelectedBox(0);
+			changeTaxoName("","", "", "", "", "");
+
 			d3.select(this).attr("stroke-width", 0.4);
 			tooltip.style("visibility", "hidden");
 		});
