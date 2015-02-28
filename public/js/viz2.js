@@ -1,8 +1,8 @@
-var margin = { top: 20, right: 30, bottom: 40, left: 30 };
+var margin = { top: 20, right: 30, bottom: 30, left: 30 };
 
-var width = 900,
+var width = 1000,
 	width = width - margin.left - margin.right,
-	height = 640,
+	height = 610,
 	height = height - margin.top - margin.bottom;
 
 var svg = d3.select('#viz').append('svg')
@@ -26,8 +26,8 @@ var ty = height/2 + margin.top;
 var g = svg.append('g')
 			.attr('transform', 'translate('+ tx +','+ ty +')');
 
-var innerRadius = 200;
-var outerRadius = height/2 - 5;
+var innerRadius = 190;
+var outerRadius = height*0.465;
 
 var linearScale = d3.scale.linear()
 					.domain([0, 4.524]) // [0, max log value] -> radius
@@ -47,7 +47,7 @@ queue()
 	.await(draw);
 
 var radius = Math.min(width, height) / 2,
-	radius = innerRadius - 35,
+	radius = innerRadius * 4/5,
     color = d3.scale.category20c();
 
 var partition = d3.layout.partition()
@@ -124,6 +124,7 @@ function draw(error, genus, root) {
 						d3.select(this).style('opacity', 0.9);
 
 						selectParents2(d, path);
+						selectLine(d.genus, d.family);
 
 						d3.select(this).transition().duration(480).attr('r', 5);
 						selectArc(path, d.genus, d.family, d.order, d.class, d.phylum, 5);
@@ -138,6 +139,7 @@ function draw(error, genus, root) {
 
 						d3.select(this).transition().duration(230).attr('r', 1.7);
 						unselectArc(path);
+						unselectLine();
 
 						d3.select(this).style('opacity', 0.7);
 						// d3.select(this).attr("stroke-width", 0);
@@ -174,6 +176,7 @@ function draw(error, genus, root) {
 		.on("mouseout", function(d) {
 			unselectArc(path);
 			unselectDots();
+			unselectLine();
 			d3.select(this).attr("stroke-width", 0.4);
 			tooltip.style("visibility", "hidden");
 		});
@@ -208,56 +211,6 @@ function getY1(d, i) {
 	return r * Math.sin(th);
 }
 
-var radiusValues = [1, 10, 100, 1000, 10000, 100000];
-// var radiusValues = [100000];
-
-function radiusGuide() {
-
-	for(var i = 0; i < radiusValues.length; i++) {
-		var r = radiusValues[i];
-		// var logr = Math.sin(r);
-		// console.log(logr);
-
-		g.append('circle')
-			.attr('r', linearScale( Math.log10(r) ) )
-			.attr('cx', 0)
-			.attr('cy', 0)
-			.style('fill', '#fff')
-			.style('fill-opacity', 0.06);
-
-		g.append('text')
-			.attr('class', 'scaleText')
-			.attr('x', 230)
-			// .attr('x', Math.cos(-Math.PI/2) * linearScale( Math.log10(r) ))
-			.attr('y', Math.sin(Math.PI/2) * linearScale( Math.log10(r) ) )
-			.text(r)
-			.attr('stroke-width', 1)
-			// .style("text-anchor", "middle");
-			.style("text-anchor", "start");
-
-		g.append('line')
-			.attr('x1', 5 )
-			.attr('y1', Math.sin(Math.PI/2) * linearScale( Math.log10(r) ) )
-			.attr('x2', 230)
-			.attr('y2', Math.sin(Math.PI/2) * linearScale( Math.log10(r) ) )
-			.text(r)
-			.attr('stroke', '#fff')
-			.style('opacity', 0.2)
-			.attr('stroke-width', 1);
-
-	}
-}
-
-function textGuide() {
-
-	g.append('text')
-		.attr('class', 'middleText')
-		.attr('x', 0)
-		.attr('y', 0 )
-		.text('Bacterial Profile')
-		.attr('stroke-width', 1)
-		.style("text-anchor", "middle");
-}
 
 ////////
 
